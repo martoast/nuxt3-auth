@@ -34,14 +34,8 @@
     async function onSubmit() {
       if (isLoading.value) return;
       isLoading.value = true
-
-      // const { data, pending, error, refresh } = await useFetch('https://api.nuxtjs.dev/mountains',{
-      //     pick: ['title']
-      // })
-
-      // console.log(data)
-
-        const { data, pending, error, refresh } = await useFetch(url, {
+      
+      const { data, pending, error, refresh } = await useFetch(url, {
           method: "post",
           body: form,
           onRequest({ request, options }) {
