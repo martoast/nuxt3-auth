@@ -4,6 +4,11 @@
           Login
       </h1>
       <form @submit.prevent="onSubmit">
+        <div v-if="_error">
+            <p class="bg-danger text-red-200 text-sm p-3">
+              {{ _error }}
+            </p>
+          </div>
           <div class="mb-3">
               <label for="formGroupExampleInput" class="form-label">Email</label>
               <input name="email" v-model="form.email" type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
