@@ -15,7 +15,7 @@
               </div>
               <div class="mb-3">
               <label for="formGroupExampleInput2" class="form-label">Password</label>
-              <input name="password" v-model="form.password" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+              <input name="password" v-model="form.password" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password">
           </div>
           <button type="submit" class="btn btn-primary mb-3">
             <span v-if="isLoading">Loading...</span>
