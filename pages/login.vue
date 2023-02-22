@@ -5,7 +5,7 @@
       </h1>
       <form @submit.prevent="onSubmit">
         <div v-if="_error">
-            <p class="bg-danger text-red-200 text-sm p-3">
+            <p class="bg-danger p-3">
               {{ _error }}
             </p>
           </div>
